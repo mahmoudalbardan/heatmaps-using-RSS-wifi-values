@@ -743,6 +743,9 @@ def copy_unzip(source_directory,directory_json,dates):
 def parse_args():
     """Parse input arguments."""
     parser = argparse.ArgumentParser()
+    parser.add_argument("--directory", type=str,
+                        help='source directory of the json files', default='./var/datas-json')
+
     parser.add_argument("--location", type=str,
                         help='name of the pharmacie', default='fontenelle')
     parser.add_argument('--startdate',type=str,
@@ -765,12 +768,12 @@ def parse_args():
 def main():
     
     figsdir = './figures' # directory of the figures
-    source_directory = "./source_files" # source json directory
     directory_pkl = "./pickled_dataframes" # pickled dataframes directory
     directory_json = "./json_files" # intermediate json directory (temporary)
     print (figsdir)
     
     args = parse_args()
+    source_directory = args.directory # source json directory
     location = args.location
     startdate = args.startdate
     period = args.period
