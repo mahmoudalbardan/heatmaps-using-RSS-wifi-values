@@ -10,19 +10,21 @@ Run using:
 `
 python3 heatmap.py [--directory DIRECTORY] [--location LOCATION] [--startdate STARTDATE] [--period PERIOD] [--edge_size EDGE_SIZE] [--sigma SIGMA] [--hcoef HCOEF] [--offset OFFSET]`
 
-directory: directory of json files
+**Arguments**:
 
-location: name of the pharmacy. Only four location are supported for the moment ["fontenelle","canuts","colmar","venissieux"]
+**directory**: directory of json files
 
-startdate: string in the format "%Y-%M-%d" starting date of the interval for which we want to build our heatmap
+**location**: name of the pharmacy. Only four location are supported for the moment ["fontenelle","canuts","colmar","venissieux"]
 
-period: int, size of the interval 
+**startdate**: string in the format "%Y-%M-%d" starting date of the interval for which we want to build our heatmap
 
-edge_size: float [0.01:0.99], edge size for generating mesh
+**period**: int, size of the interval 
 
-sigma: int, parameter of the Gaussian filter for the heatmap
+**edge_size**: float [0.01:0.99], edge size for generating mesh
 
-hcoef: float, weight used to determine the extreme value of the heatmap
+**sigma**: int, parameter of the Gaussian filter for the heatmap
 
-offset: int, offset applied when plotting and used for limit specification
+**hcoef**: float, weight used to determine the extreme value of the heatmap
+
+**offset**: int, offset applied when plotting and used for limit specification
 
