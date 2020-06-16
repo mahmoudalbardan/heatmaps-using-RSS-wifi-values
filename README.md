@@ -14,7 +14,7 @@ python3 heatmap.py [--directory DIRECTORY] [--location LOCATION] [--startdate ST
 
 **Arguments**:
 
-**directory**: directory of json files
+`**directory**:` directory of json files
 
 **location**: name of the pharmacy. Only four location are supported for the moment ["fontenelle","canuts","colmar","venissieux"]
 
