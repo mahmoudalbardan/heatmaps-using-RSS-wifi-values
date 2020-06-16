@@ -20,8 +20,8 @@ python3 heatmap.py [--directory DIRECTORY] [--location LOCATION] [--startdate ST
 
 `startdate`: string in the format "%Y-%M-%d" starting date of the interval for which we want to build our heatmap
 
-`period`: int, size of the interval 
-`edge_size`: float [0.01:0.99], edge size for generating mesh
+`period`: int, size of the interval   
+`edge_size`: float [0.01:0.99], edge size for generating mesh. 
 
 `sigma`: int, parameter of the Gaussian filter for the heatmap
 
