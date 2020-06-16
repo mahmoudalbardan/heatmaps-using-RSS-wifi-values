@@ -1,8 +1,9 @@
 # heatmaps
 Script to compute the heatmap.
 
-Heatmaps are saved in the folder "./figures".       
-"./json_files" is a file where data are saved temporarly, copied, unziped and treated to produce dataframes that are pickled as pandas.DataFrame objects in "./pickled_dataframes". These dataframes are used to compute the heatmaps.      
+Heatmaps are saved in the folder `./figures`.           
+`./json_files` is a file where data are saved temporarly, copied, unziped and treated to produce dataframes that are pickled as pandas.DataFrame objects in `./pickled_dataframes`.         
+These dataframes are used to compute the heatmaps.      
 
 **Run using**:           
 `
