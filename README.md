@@ -15,7 +15,7 @@ python3 heatmap.py [--directory DIRECTORY] [--location LOCATION] [--startdate ST
 **Arguments**:
 
 `directory:` directory of json files        
-`location`: name of the pharmacy. Only four location are supported for the moment ["fontenelle","canuts","colmar","venissieux"]         
+`location`: name of the pharmacy. Only four location are supported for the moment [`fontenelle`,`canuts`,`colmar`,`venissieux`]         
 `startdate`: string in the format "%Y-%M-%d" starting date of the interval for which we want to build our heatmap          
 `period`: int, size of the interval   
 `edge_size`: float [0.01:0.99], edge size for generating mesh   
