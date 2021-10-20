@@ -2,13 +2,20 @@
 A new method to compute the localization heatmap using RSS values of wifi signals emitted from mobile phones. 
 We installed wifi sensors in multiple drugstores and tried to construct heatmaps of people position inside them. 
 The method is based on signal strengh. 
+
 Instead of classical trilateration (which is not suitable in a closed environment), we compute the heatmap based on clustered RSS.
 If we have a mobile phone *p* and *n* sensors inside a store, we are able to capture *n* signals, then we have *n*  RSS values
-vector = (*p_1*, *p_2*, ..., *p_n*). Now, if we have 1000 clients in the store, we can construct a 2D dataset of size 1000 * *n* where the cell (i,j) in this dataset correspond to the RSS value of the signal emitted from the mobile phone *i* and captured by the sensor *j* .
+vector = (*p_1*, *p_2*, ..., *p_n*).
 
+Now, if we have 1000 clients in the store, we can construct a 2D dataset of size 1000 * *n* where the cell (i,j) in this dataset correspond to the RSS value of the signal emitted from the mobile phone *i* and captured by the sensor *j* .
+
+Next, we generate 2D triangular meshing from the store's map that contains *K* finite elements and we cluster our previous dataset into *K* clusters.
+Then, we affect each finite element (triangle) to a cluster. The values in the heatmap are the frequency of each cluster in the dataset
+
+Examples of heatmaps are saved in `./figures`.    
 
 **Important**:   
-Heatmaps are saved in the folder `./figures`.           
+       
 `./json_files` is a file where data are saved temporarly, copied, unziped and treated to produce dataframes that are pickled as pandas.DataFrame objects in `./pickled_dataframes`.         
 These dataframes are used to compute the heatmaps.      
 
