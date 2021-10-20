@@ -1,5 +1,7 @@
 # heatmaps
-Script to compute the heatmap.
+Script to compute the localization heatmaps from RSS values of wifi signals emitted from mobile phones. We installed wifi sensors in multiple drugstores and tried to construct heatmaps of people position inside them. 
+
+
 
 Heatmaps are saved in the folder `./figures`.           
 `./json_files` is a file where data are saved temporarly, copied, unziped and treated to produce dataframes that are pickled as pandas.DataFrame objects in `./pickled_dataframes`.         
